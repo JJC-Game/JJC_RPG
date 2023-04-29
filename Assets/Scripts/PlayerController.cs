@@ -1,9 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float jumpPower = 20.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +33,17 @@ public class PlayerController : MonoBehaviour
             inputX = 1;
         }
         RefreshPlayerPos(inputX, inputZ);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Rigidbody>().AddForce(transform.up * jumpPower, ForceMode.Impulse);
+        }
     }
 
     void RefreshPlayerPos(float inputX, float inputZ)
     {
-        float PlayerSpeed = 5;          // 1•bŠÔ‚ÉPlayer‚ª“®‚­‹——£.
-        float PlayerRotYSpeed = 90;     // 1•bŠÔ‚ÉPlayer‚ªU‚èŒü‚­Šp“x.
+        float PlayerSpeed = 5;          // 1ç§’é–“ã«PlayerãŒå‹•ãè·é›¢.
+        float PlayerRotYSpeed = 90;     // 1ç§’é–“ã«PlayerãŒæŒ¯ã‚Šå‘ãè§’åº¦.
 
         Vector3 oldPosition = transform.position;
         Vector3 moveVector = transform.forward * Time.deltaTime * inputZ * PlayerSpeed;
