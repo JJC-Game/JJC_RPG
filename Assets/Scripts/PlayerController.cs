@@ -109,4 +109,13 @@ public class PlayerController : MonoBehaviour
         Vector3 newRot = new Vector3(oldRot.x, oldRot.y + Time.deltaTime * inputX * PlayerRotYSpeed, oldRot.z);
         transform.rotation = Quaternion.Euler(newRot);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+/*        if(collision.gameObject.name == "DropItem")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().GatherBear();
+            Destroy(collision.gameObject);
+        }*/
+    }
 }
