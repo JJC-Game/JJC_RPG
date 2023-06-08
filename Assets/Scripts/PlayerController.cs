@@ -6,13 +6,20 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpPower = 20.0f;
 
+    // 武器を振る.
+    GameObject weaponHandObj;
     float attackAnimationSecond = 0.5f;
-    float weaponSwingAngleSpeedPerSecond = 180.0f;
-
+    float weaponSwingAngleSpeedPerSecond = 120.0f;
+    float weaponSwingFirstAngle = -60.0f;
     float attackAnimeTimer;
+    bool isAttack;
+
     // Start is called before the first frame update
     void Start()
     {
+//        weaponHandObj = transform.Find("WeaponHand").gameObject;
+//        InitializeWeaponHandAngle();
+        isAttack = false;
         attackAnimeTimer = 0.0f;
     }
 
@@ -21,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         UpdateMove();
         UpdateJump();
-        UpdateAttack();
+//        UpdateAttack();
 
     }
 
@@ -60,11 +67,32 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            float animationRate = attackAnimeTimer / attackAnimationSecond;
-            float degreeAngle = animationRate * weaponSwingAngleSpeedPerSecond;
+            attackAnimeTimer = 0.0f;
+            isAttack = true;
         }
 
-        attackAnimeTimer += Time.deltaTime;
+        if (isAttack)
+        {
+            attackAnimeTimer += Time.deltaTime;
+
+            float animationRate = attackAnimeTimer / attackAnimationSecond;
+            float degreeAngle = animationRate * weaponSwingAngleSpeedPerSecond;
+
+            weaponHandObj.transform.rotation = Quaternion.Euler(90.0f, weaponSwingFirstAngle + degreeAngle, 0.0f);
+
+            if(attackAnimeTimer > attackAnimationSecond)
+            {
+                InitializeWeaponHandAngle();
+                isAttack = false;
+            }
+        }
+
+        
+    }
+
+    void InitializeWeaponHandAngle()
+    {
+        weaponHandObj.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
     }
 
     void RefreshPlayerPos(float inputX, float inputZ)
