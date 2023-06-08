@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# JJC Assets
+/[Aa]ssets/[Rr]esources/[Pp]rojectAssets
+Packages/packages-lock.json
+Packages/manifest.json
