@@ -34,25 +34,17 @@ public class PlayerController : MonoBehaviour
 
     void UpdateMove()
     {
-        float inputX = 0;
-        float inputZ = 0;
-        if (Input.GetKey(KeyCode.W))
+        if(GameObject.Find("GameManager").GetComponent<GameManager>().IsGameClear())
         {
-            inputZ = 1;
+            return;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            inputZ = -1;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            inputX = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            inputX = 1;
-        }
-        RefreshPlayerPos(inputX, inputZ);
+
+        JobWorld jobworld = GetComponent<JobWorld>();
+
+        RefreshPlayerPos(jobworld.inputX, jobworld.inputZ);
+
+        jobworld.inputX = 0;
+        jobworld.inputZ = 0;
     }
 
     void UpdateJump()
