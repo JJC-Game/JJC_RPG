@@ -24,17 +24,18 @@ public class JobWorld : MonoBehaviour
          */
 
         if (Input.GetKey(KeyCode.W)) inputZ = 1;
+
         if (Input.GetKey(KeyCode.S)) inputZ = -1;
-        if (Input.GetKey(KeyCode.A)) inputX = -1;
+        
         if (Input.GetKey(KeyCode.D)) inputX = 1;
+        
+        if (Input.GetKey(KeyCode.A)) inputX = -1;
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "DropItem")
         {
-            //gameManager.GatherBear();
-            //Destroy(collision.gameObject);
             Destroy(collision.gameObject);
         }
         
