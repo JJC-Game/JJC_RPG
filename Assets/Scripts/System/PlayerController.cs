@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        JobWorld jobworld = GameObject.Find("JobWorld").GetComponent<JobWorld>();
+        JobWorld jobworld = GetComponent<JobWorld>();
 
         RefreshPlayerPos(jobworld.inputX, jobworld.inputZ);
 
@@ -104,7 +104,10 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        JobWorld jobworld = GameObject.Find("JobWorld").GetComponent<JobWorld>();
-        jobworld.OnCollisionEnter(collision);
+/*        if(collision.gameObject.name == "DropItem")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().GatherBear();
+            Destroy(collision.gameObject);
+        }*/
     }
 }
