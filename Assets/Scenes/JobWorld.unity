@@ -707,8 +707,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1609504565}
   - {fileID: 2121147314}
+  - {fileID: 1609504565}
   - {fileID: 859018055}
   - {fileID: 779337041}
   m_Father: {fileID: 1517426118}
@@ -1765,6 +1765,7 @@ MonoBehaviour:
   bearList:
   - {fileID: 919132149155446097, guid: 960598e2c713d63468437d5c88ff873c, type: 3}
   - {fileID: 919132149155446097, guid: ecbd287dd721aaa448a4cbec8996c11d, type: 3}
+  - {fileID: 919132149155446097, guid: 8a37ed81d6b0a884192051dda4197817, type: 3}
 --- !u!4 &1017029511
 Transform:
   m_ObjectHideFlags: 0
