@@ -9,7 +9,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 public class StageManager : MonoBehaviour
 {
     List<GameObject> m_cubePrefabList;
-    const int WORLD_X = 100, WORLD_Z = 100;
+    const int WORLD_X = 35, WORLD_Z = 70;
 
     enum CUBE_TYPE{
         GroundGrass,
@@ -70,7 +70,7 @@ public class StageManager : MonoBehaviour
     void CreateCube(CUBE_TYPE cubeType, int cube_x, int cube_y, int cube_z, Transform parent, bool isNoCollider = false)
     {
         // 開始座標を指定.
-        Vector3 startPos = new Vector3(-WORLD_X / 2, 0, -WORLD_Z / 2);
+        Vector3 startPos = new Vector3(-WORLD_X / 2, 0, -10);
 
         GameObject instance = Instantiate(m_cubePrefabList[(int)cubeType]);
         instance.transform.SetParent(parent);
