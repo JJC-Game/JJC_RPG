@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2440425426211255807}
   - component: {fileID: 2440425426211255806}
-  - component: {fileID: 2130231901218216513}
+  - component: {fileID: 15204828658616186}
   m_Layer: 0
   m_Name: DropItem
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2440425426211255793}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -79,7 +79,7 @@ Transform:
   - {fileID: 2440425425442317504}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!54 &2440425426211255806
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2130231901218216513
+--- !u!114 &15204828658616186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +105,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2440425426211255793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f00fa98d1302e4b8354d7c642f5318, type: 3}
+  m_Script: {fileID: 11500000, guid: 55933f9b40381d04da8af5649ee3d454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

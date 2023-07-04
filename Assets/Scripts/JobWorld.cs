@@ -6,9 +6,8 @@ public class JobWorld : MonoBehaviour
 {
     public int inputX = 0, inputZ = 0;
     GameManager gameManager = null;
+    public List<GameObject> bearList;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -32,12 +31,11 @@ public class JobWorld : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) inputX = -1;
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "DropItem")
         {
             Destroy(collision.gameObject);
         }
-        
     }
 }
