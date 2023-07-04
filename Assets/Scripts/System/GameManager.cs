@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    int bearNum = 0;
     Text bearNumText;
     public bool isGameClear = false;
 
@@ -14,7 +13,6 @@ public class GameManager : MonoBehaviour
     {
         bearNumText = GameObject.Find("BearNum").GetComponent<Text>();
         bearNumText.text = "0";
-        bearNum = 0;
     }
 
     // Update is called once per frame

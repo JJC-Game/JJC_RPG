@@ -28,17 +28,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            systemUI.ChangeState(UIControl.ANIME.eFADEIN);
-            gameClearUI.ChangeState(UIControl.ANIME.eFADEOUT);
-        }
-        else if(Input.GetMouseButtonDown(1))
-        {
-            systemUI.ChangeState(UIControl.ANIME.eFADEOUT);
-            gameClearUI.ChangeState(UIControl.ANIME.eFADEIN);
-        }*/
-
         systemUI.Update();
         gameClearUI.Update();
 
@@ -93,7 +82,6 @@ public class UIControl
 
     public void Update()
     {
-        float newX;
         switch (state)
         {
             case ANIME.eSHOW:
