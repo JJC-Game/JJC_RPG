@@ -132,11 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3014059551991979780, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_Name
-      value: Daiza (2)
+      value: Daiza
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 102632628}
   - component: {fileID: 102632627}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102632626}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -274,8 +274,8 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 4
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &150366504
 GameObject:
@@ -483,20 +483,12 @@ Transform:
   - {fileID: 1422010870}
   - {fileID: 885372133}
   - {fileID: 7427847724911695398}
-  - {fileID: 1909249931}
-  - {fileID: 102632630}
-  - {fileID: 1011434144}
-  - {fileID: 1128251590}
-  - {fileID: 2136440255}
-  - {fileID: 1699134959}
-  - {fileID: 1045203188}
+  - {fileID: 2008574963}
   - {fileID: 1283802942}
   - {fileID: 1440001720}
   - {fileID: 673726026}
   - {fileID: 2075384352}
   - {fileID: 1412260717}
-  - {fileID: 2050866913}
-  - {fileID: 600635332}
   m_Father: {fileID: 1517426118}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -593,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4201647635008042063, guid: c9650de3b384353458e1f5540dbc91ae, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4201647635008042063, guid: c9650de3b384353458e1f5540dbc91ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -818,7 +810,7 @@ GameObject:
   - component: {fileID: 600635330}
   - component: {fileID: 600635329}
   m_Layer: 0
-  m_Name: Cube (8)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,7 +823,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600635328}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -899,8 +891,8 @@ Transform:
   m_LocalScale: {x: 20, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 16
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!1001 &666018555
 PrefabInstance:
@@ -915,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1586,11 +1578,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3014059551991979780, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_Name
-      value: Daiza (3)
+      value: Daiza
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1647,7 +1639,7 @@ GameObject:
   - component: {fileID: 1011434142}
   - component: {fileID: 1011434141}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,7 +1652,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011434140}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1728,8 +1720,8 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 5
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017029509
 GameObject:
@@ -1794,7 +1786,7 @@ GameObject:
   - component: {fileID: 1045203186}
   - component: {fileID: 1045203185}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1807,7 +1799,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045203184}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1875,8 +1867,8 @@ Transform:
   m_LocalScale: {x: 20, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 9
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!1 &1105296862
 GameObject:
@@ -1943,7 +1935,7 @@ GameObject:
   - component: {fileID: 1128251588}
   - component: {fileID: 1128251587}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1956,7 +1948,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128251586}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2024,8 +2016,8 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 6
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1141091755
 PrefabInstance:
@@ -2036,11 +2028,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3014059551991979780, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_Name
-      value: Daiza (1)
+      value: Daiza
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3014059551991979787, guid: 72ec781d348cb2b4bb8b09318de974cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2657,7 +2649,7 @@ GameObject:
   - component: {fileID: 1699134957}
   - component: {fileID: 1699134956}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2670,7 +2662,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699134955}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2738,8 +2730,8 @@ Transform:
   m_LocalScale: {x: 20, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 8
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &1802434187
 GameObject:
@@ -2886,7 +2878,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879383249}
   m_CullTransparentMesh: 1
---- !u!1 &1909249930
+--- !u!1 &2008574962
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2894,26 +2886,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1909249931}
+  - component: {fileID: 2008574963}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: WallParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1909249931
+--- !u!4 &2008574963
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909249930}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4820905, y: 2.6039288, z: -19.35036}
+  m_GameObject: {fileID: 2008574962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 102632630}
+  - {fileID: 1011434144}
+  - {fileID: 1128251590}
+  - {fileID: 2136440255}
+  - {fileID: 1699134959}
+  - {fileID: 1045203188}
+  - {fileID: 2050866913}
+  - {fileID: 600635332}
   m_Father: {fileID: 272658732}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2930,7 +2930,7 @@ GameObject:
   - component: {fileID: 2050866911}
   - component: {fileID: 2050866910}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2943,7 +2943,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050866909}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3011,8 +3011,8 @@ Transform:
   m_LocalScale: {x: 20, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 15
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!4 &2075384352 stripped
 Transform:
@@ -3078,7 +3078,7 @@ GameObject:
   - component: {fileID: 2136440253}
   - component: {fileID: 2136440252}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: AppWallCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3091,7 +3091,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136440251}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 155773a77428a644fa256c8f5e261c73, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3159,8 +3159,8 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 272658732}
-  m_RootOrder: 7
+  m_Father: {fileID: 2008574963}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2140900853
 GameObject:

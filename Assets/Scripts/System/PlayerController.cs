@@ -14,8 +14,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateMove();
         UpdateJump();
+    }
+
+    void FixedUpdate()
+    {
+        UpdateMove();
     }
 
     void UpdateMove()

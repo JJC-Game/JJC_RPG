@@ -2,24 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JobWorld : MonoBehaviour
+public class JobWorld : JobWorld_Core
 {
-    public int inputX = 0, inputZ = 0;
-    GameManager gameManager = null;
-    public List<GameObject> bearList;
-
-    void Start()
-    {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
-
     // Update is called once per frame
     void Update()
     {
         /*
-         * 
-         * 移動処理を下の行に書いてみてね
-         * 
+         * ↓↓↓↓↓↓↓↓↓↓↓↓↓
+         * 移動処理を下の行に書いてね
+         * ↓↓↓↓↓↓↓↓↓↓↓↓↓
          */
 
         if (Input.GetKey(KeyCode.W)) inputZ = 1;
@@ -31,11 +22,14 @@ public class JobWorld : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) inputX = -1;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    override protected void OnJobWorldCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "DropItem")
-        {
-            Destroy(collision.gameObject);
-        }
+        /*
+         * ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+         * クマとぶつかったときの処理を下の行に書いてね
+         * ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+         */
+
+        Destroy(collision.gameObject);
     }
 }
