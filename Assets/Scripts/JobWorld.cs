@@ -30,6 +30,6 @@ public class JobWorld : JobWorld_Core
          * ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
          */
 
-        //Destroy(collision.gameObject);
+        Destroy(collision.gameObject);
     }
 }
