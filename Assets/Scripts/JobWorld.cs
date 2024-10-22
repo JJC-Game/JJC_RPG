@@ -7,11 +7,7 @@ public class JobWorld : JobWorld_Core
     // Update is called once per frame
     void Update()
     {
-        /*
-         * ↓↓↓↓↓↓↓↓↓↓↓↓↓
-         * 移動処理を下の行に書いてね
-         * ↓↓↓↓↓↓↓↓↓↓↓↓↓
-         */
+        // ↓↓↓移動処理を下の行に書いてね↓↓↓
 
         if (Input.GetKey(KeyCode.W)) inputZ = 1;
 
@@ -24,11 +20,7 @@ public class JobWorld : JobWorld_Core
 
     override protected void OnJobWorldCollisionEnter(Collision collision)
     {
-        /*
-         * ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-         * クマとぶつかったときの処理を下の行に書いてね
-         * ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-         */
+        // ぶつかったときの処理を下の行に書いてね
 
         Destroy(collision.gameObject);
     }
