@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class JobWorld_Core : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class JobWorld_Core : MonoBehaviour
     protected GameManager gameManager = null;
     public List<GameObject> bearList;
 
-    void Start()
+    UnityAction<Collision> _hitFunc;
+
+    void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _hitFunc = null;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -18,8 +22,18 @@ public class JobWorld_Core : MonoBehaviour
         if (collision.gameObject.name == "DropItem")
         {
             OnJobWorldCollisionEnter(collision);
+
+            if (_hitFunc != null)
+            {
+                _hitFunc(collision);
+            }
         }
     }
 
     virtual protected void OnJobWorldCollisionEnter(Collision collision) { }
+
+    public void SetHitFunc(UnityAction<Collision> hitFunc)
+    {
+        _hitFunc = hitFunc;
+    }
 }
